@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { ProductCard } from "@/components/product-card"
-import { products } from "@/lib/menu"
+import { products } from "@/lib/products"
 import { useCart } from "@/context/cart-context"
 
 export default function ProductPage() {

@@ -1,6 +1,6 @@
 "use client"
 
-import type { Product } from "@/lib/menu"
+import type { Product } from "@/lib/products"
 import { ProductCard } from "./product-card"
 import { motion } from "framer-motion"
 

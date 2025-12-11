@@ -4,7 +4,7 @@ import { useState } from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { Heart, ShoppingBag } from "lucide-react"
-import type { Product } from "@/lib/menu"
+import type { Product } from "@/lib/products"
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
