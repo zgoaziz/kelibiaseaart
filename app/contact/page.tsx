@@ -85,7 +85,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-xl font-bold text-secondary mb-2">Email</h3>
                   <a href="mailto:contact@kelibia-maris.com" className="text-primary hover:text-primary/80">
-                    contact@kelibia-maris.com
+                    contact@kelibia-seaart.com
                   </a>
                 </div>
               </div>

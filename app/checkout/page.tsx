@@ -36,7 +36,7 @@ export default function CheckoutPage() {
               Vous devez avoir des articles dans votre panier pour commander.
             </p>
             <Button asChild className="bg-sea-deep hover:bg-sea-light text-white px-8 py-2 rounded-lg">
-              <Link href="/products">Retour aux produits</Link>
+              <Link href="//menu">Retour aux produits</Link>
             </Button>
           </motion.div>
         </div>
@@ -87,7 +87,7 @@ export default function CheckoutPage() {
       .map((item) => `${item.name} x${item.quantity} - ${(item.price * item.quantity).toFixed(2)} DT`)
       .join("\n")
 
-    const message = `*Nouvelle Commande Kélibia Maris* 🌊
+    const message = `*Nouvelle Commande Kélibia Sea art* 🌊
 
 *Numéro de commande:* KM-${orderNumber}
 
@@ -112,7 +112,7 @@ ${cartItems}
   }
 
   const sendWhatsAppMessage = () => {
-    const whatsappPhone = "+21672000000" // Business number for Kélibia Maris
+    const whatsappPhone = "+21672000000" // Business number for Kélibia Sea art
     const message = encodeWhatsAppMessage(formData)
     const whatsappUrl = `https://wa.me/${whatsappPhone}?text=${message}`
     window.open(whatsappUrl, "_blank")

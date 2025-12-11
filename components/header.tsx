@@ -38,7 +38,7 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        {/* Updated logo branding from "Kélibia Maris" to "Kelibia Sea Art" */}
+        {/* Updated logo branding from "Kélibia Sea art" to "Kelibia Sea Art" */}
         <Link href="/" className="relative z-10 flex items-center gap-2">
           <div className="w-8 h-8 rounded-full bg-sea-deep flex items-center justify-center text-white">
             <Waves className="w-5 h-5" />

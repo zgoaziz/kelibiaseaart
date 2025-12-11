@@ -12,7 +12,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Brand Info */}
           <div>
-            <div className="font-serif font-bold text-3xl text-sand-dark mb-2">Kélibia Maris</div>
+            <div className="font-serif font-bold text-3xl text-sand-dark mb-2">Kélibia sea art</div>
             <div className="text-xs uppercase tracking-widest text-white/80 mb-4">Artisanat écologique tunisien</div>
             <p className="text-white/80 mb-6">
               Transformant les déchets marins en créations artisanales uniques depuis Nabeul/Kélibia.
@@ -86,7 +86,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-sand-dark" />
-                <p>info@kelibiamaris.tn</p>
+                <p>info@kelibiaseaart.tn</p>
               </div>
             </div>
           </div>
@@ -111,7 +111,7 @@ export function Footer() {
         <Separator className="bg-white/20 my-8" />
 
         <div className="flex flex-col md:flex-row justify-between items-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} Kélibia Maris. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} Kélibia Sea art. Tous droits réservés.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <Link href="/privacy" className="hover:text-sand-dark transition-colors">
               Politique de confidentialité

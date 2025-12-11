@@ -21,13 +21,13 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Kélibia Maris - Bijoux et Créations Artisanales Écologiques",
+  title: "Kélibia sea art - Bijoux et Créations Artisanales Écologiques",
   description:
-    "Découvrez Kélibia Maris, un projet de valorisation écologique et artisanale. Transformez les déchets marins en magnifiques bijoux et créations handmade faites à Kélibia, Tunisie.",
+    "Découvrez Kélibia Sea art, un projet de valorisation écologique et artisanale. Transformez les déchets marins en magnifiques bijoux et créations handmade faites à Kélibia, Tunisie.",
   keywords: "Kélibia, artisanat écologique, bijoux marins, déchets marins, produits artisanaux, Tunisie",
-  authors: [{ name: "Kélibia Maris" }],
+  authors: [{ name: "Kélibia Sea art" }],
   openGraph: {
-    title: "Kélibia Maris - Créations Artisanales Écologiques",
+    title: "Kélibia Sea art - Créations Artisanales Écologiques",
     description:
       "Transformez les déchets marins en bijoux et créations uniques. Projet écologique et social à Kélibia, Tunisie.",
     type: "website",

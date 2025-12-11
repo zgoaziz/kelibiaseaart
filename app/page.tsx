@@ -276,7 +276,7 @@ export default function Home() {
                 </h3>
                 <p className="text-gray-dark leading-relaxed">
                   Filets de pêche abandonnés, coquillages oubliés... ces déchets marins polluent notre écosystème.
-                  Kélibia Maris les transforme en trésors artisanaux.
+                  Kélibia Sea art les transforme en trésors artisanaux.
                 </p>
               </motion.div>
             </motion.div>

@@ -34,7 +34,7 @@ export default function AboutPage() {
         >
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-secondary mb-4">À Propos de Nous</h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Découvrez l'histoire de Kélibia Maris et notre engagement envers l'artisanat durable et la préservation de
+            Découvrez l'histoire de Kélibia Sea art et notre engagement envers l'artisanat durable et la préservation de
             nos océans.
           </p>
         </motion.div>
@@ -49,7 +49,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-serif font-bold text-secondary mb-6">Notre Histoire</h2>
           <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
             <p>
-              Kélibia Maris est née de la passion pour la mer et l'artisanat. Inspirés par la beauté naturelle de
+              Kélibia Sea art est née de la passion pour la mer et l'artisanat. Inspirés par la beauté naturelle de
               Kélibia, nous avons décidé de créer une marque qui célèbre l'océan tout en respectant l'environnement.
             </p>
             <p>
@@ -139,7 +139,7 @@ export default function AboutPage() {
             produits artisanaux durables.
           </p>
           <a
-            href="/products"
+            href="/menu"
             className="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Découvrir nos produits
