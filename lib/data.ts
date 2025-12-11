@@ -1,0 +1,138 @@
+export const products = [
+  {
+    id: "baklava-pistache",
+    name: "Baklava à la Pistache",
+    description:
+      "Délicieuse pâtisserie feuilletée au miel et aux pistaches, préparée selon la recette traditionnelle tunisienne.",
+    price: 18.5,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle", "Orientale"],
+    ingredients: ["Pâte filo", "Pistaches", "Miel", "Beurre", "Fleur d'oranger"],
+    allergens: ["Fruits à coque", "Gluten", "Produits laitiers"],
+    gallery: [
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+      "/placeholder.svg?height=600&width=600",
+    ],
+  },
+  {
+    id: "kaak-warka",
+    name: "Kaak Warka",
+    description:
+      "Pâtisserie en forme d'anneau, fourrée d'une délicieuse préparation aux amandes et parfumée à l'eau de rose.",
+    price: 22.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle"],
+    ingredients: ["Farine", "Amandes", "Sucre", "Eau de rose", "Cannelle"],
+    allergens: ["Fruits à coque", "Gluten"],
+  },
+  {
+    id: "makroudh",
+    name: "Makroudh aux Dattes",
+    description:
+      "Gâteau traditionnel à base de semoule, fourré de pâte de dattes et parfumé à la cannelle et à l'eau de fleur d'oranger.",
+    price: 16.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle", "Orientale"],
+    ingredients: ["Semoule", "Dattes", "Huile d'olive", "Cannelle", "Fleur d'oranger"],
+    allergens: ["Gluten"],
+  },
+  {
+    id: "zlabia",
+    name: "Zlabia",
+    description:
+      "Pâtisserie frite et imbibée de sirop parfumé au safran et à l'eau de fleur d'oranger, croustillante à l'extérieur et moelleuse à l'intérieur.",
+    price: 14.5,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle"],
+    ingredients: ["Farine", "Levure", "Safran", "Miel", "Fleur d'oranger"],
+    allergens: ["Gluten"],
+  },
+  {
+    id: "samsa-amandes",
+    name: "Samsa aux Amandes",
+    description:
+      "Délicieuse pâtisserie triangulaire à base de pâte filo croustillante, fourrée d'amandes concassées et parfumée à la cannelle.",
+    price: 20.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle", "Orientale"],
+    ingredients: ["Pâte filo", "Amandes", "Miel", "Cannelle", "Beurre"],
+    allergens: ["Fruits à coque", "Gluten", "Produits laitiers"],
+  },
+  {
+    id: "ghraiba",
+    name: "Ghraiba",
+    description: "Biscuit fondant à base de farine de pois chiches, parfumé aux graines de sésame et à la vanille.",
+    price: 12.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle"],
+    ingredients: ["Farine de pois chiches", "Beurre", "Sucre", "Sésame", "Vanille"],
+    allergens: ["Produits laitiers", "Sésame"],
+  },
+  {
+    id: "millefeuille-pistache",
+    name: "Millefeuille à la Pistache",
+    description:
+      "Pâtisserie moderne alliant le croustillant de la pâte feuilletée et la douceur d'une crème à la pistache.",
+    price: 24.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Moderne", "Chocolat"],
+    ingredients: ["Pâte feuilletée", "Crème pâtissière", "Pistaches", "Sucre glace", "Beurre"],
+    allergens: ["Fruits à coque", "Gluten", "Produits laitiers", "Œufs"],
+  },
+  {
+    id: "eclair-chocolat",
+    name: "Éclair au Chocolat Oriental",
+    description:
+      "Éclair revisité avec une touche orientale, garni d'une crème au chocolat parfumée à la cardamome et aux épices.",
+    price: 15.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Moderne", "Chocolat"],
+    ingredients: ["Pâte à choux", "Chocolat", "Crème", "Cardamome", "Cannelle"],
+    allergens: ["Gluten", "Produits laitiers", "Œufs"],
+  },
+  {
+    id: "tarte-fruits",
+    name: "Tarte aux Fruits Exotiques",
+    description:
+      "Tarte moderne garnie de fruits exotiques frais sur une crème légère parfumée à l'eau de fleur d'oranger.",
+    price: 26.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Moderne", "Fruits"],
+    ingredients: ["Pâte sucrée", "Fruits exotiques", "Crème pâtissière", "Fleur d'oranger", "Sucre"],
+    allergens: ["Gluten", "Produits laitiers", "Œufs"],
+  },
+  {
+    id: "cheesecake-dattes",
+    name: "Cheesecake aux Dattes",
+    description:
+      "Cheesecake onctueux sur une base de biscuits spéculoos, garni d'un coulis de dattes et de noix caramélisées.",
+    price: 28.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Moderne", "Fruits"],
+    ingredients: ["Fromage frais", "Dattes", "Spéculoos", "Noix", "Beurre"],
+    allergens: ["Fruits à coque", "Gluten", "Produits laitiers", "Œufs"],
+  },
+  {
+    id: "macaron-rose",
+    name: "Macaron à la Rose",
+    description:
+      "Macaron délicat à la rose, avec une coque croustillante et une ganache onctueuse parfumée à l'eau de rose et aux pétales cristallisés.",
+    price: 19.5,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Moderne"],
+    ingredients: ["Amandes", "Sucre", "Blancs d'œufs", "Eau de rose", "Pétales de rose"],
+    allergens: ["Fruits à coque", "Œufs"],
+  },
+  {
+    id: "cornes-gazelle",
+    name: "Cornes de Gazelle",
+    description:
+      "Pâtisserie en forme de croissant, fourrée d'une pâte d'amandes parfumée à la fleur d'oranger et saupoudrée de sucre glace.",
+    price: 17.0,
+    image: "/placeholder.svg?height=600&width=600",
+    categories: ["Traditionnelle", "Orientale"],
+    ingredients: ["Farine", "Amandes", "Sucre glace", "Fleur d'oranger", "Beurre"],
+    allergens: ["Fruits à coque", "Gluten", "Produits laitiers"],
+  },
+]

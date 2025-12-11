@@ -1,0 +1,326 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens pour Kélibia Maris */
+:root {
+  /* Couleurs principales - Thème côtier écologique */
+  --sea-deep: #1a5f7a; /* Bleu mer profond */
+  --sea-light: #4a9fba; /* Bleu mer clair */
+  --sand-dark: #d4af85; /* Beige sable foncé */
+  --sand-light: #f0e6d2; /* Beige sable clair */
+  --nature-green: #5d8d7e; /* Vert nature */
+  --nature-light: #8fb5a8; /* Vert nature clair */
+
+  /* Accents et neutres */
+  --gold-accent: #c9a961; /* Or pour accents */
+  --white: #ffffff;
+  --cream: #faf7f2;
+  --gray-light: #f5f3f0;
+  --gray-medium: #b8b0a6;
+  --gray-dark: #4a4a4a;
+  --black: #1a1a1a;
+}
+
+/* Styles de base */
+body {
+  color: var(--black);
+  background-color: var(--white);
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+  color: var(--sea-deep);
+  font-weight: 600;
+}
+
+/* Utilitaires de couleurs */
+@layer utilities {
+  /* Texte */
+  .text-sea-deep {
+    color: var(--sea-deep);
+  }
+
+  .text-sea-light {
+    color: var(--sea-light);
+  }
+
+  .text-sand-dark {
+    color: var(--sand-dark);
+  }
+
+  .text-nature-green {
+    color: var(--nature-green);
+  }
+
+  .text-gold-accent {
+    color: var(--gold-accent);
+  }
+
+  /* Backgrounds */
+  .bg-sea-deep {
+    background-color: var(--sea-deep);
+  }
+
+  .bg-sea-light {
+    background-color: var(--sea-light);
+  }
+
+  .bg-sand-light {
+    background-color: var(--sand-light);
+  }
+
+  .bg-nature-green {
+    background-color: var(--nature-green);
+  }
+
+  .bg-nature-light {
+    background-color: var(--nature-light);
+  }
+
+  .bg-cream {
+    background-color: var(--cream);
+  }
+
+  /* Borders */
+  .border-sea-deep {
+    border-color: var(--sea-deep);
+  }
+
+  .border-sand-dark {
+    border-color: var(--sand-dark);
+  }
+
+  .border-nature-green {
+    border-color: var(--nature-green);
+  }
+
+  /* Opacités */
+  .bg-sea-deep\/5 {
+    background-color: rgba(26, 95, 122, 0.05);
+  }
+
+  .bg-sea-deep\/10 {
+    background-color: rgba(26, 95, 122, 0.1);
+  }
+
+  .bg-sea-deep\/20 {
+    background-color: rgba(26, 95, 122, 0.2);
+  }
+
+  .bg-white\/50 {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  .bg-white\/80 {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .text-white\/70 {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .text-white\/90 {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .border-white\/20 {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Composants */
+@layer components {
+  /* Cartes */
+  .card-marine {
+    background: linear-gradient(135deg, rgba(26, 95, 122, 0.05) 0%, rgba(93, 141, 126, 0.05) 100%);
+    border: 1px solid rgba(26, 95, 122, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .card-marine:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(26, 95, 122, 0.15);
+    border-color: var(--nature-light);
+  }
+
+  /* Bouttons */
+  .btn-primary {
+    background-color: var(--sea-deep);
+    color: white;
+    border-radius: 6px;
+    padding: 12px 32px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--sea-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(26, 95, 122, 0.3);
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--sea-deep);
+    border: 2px solid var(--sea-deep);
+    border-radius: 6px;
+    padding: 10px 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--sea-deep);
+    color: white;
+  }
+
+  /* Décoration dorée */
+  .gold-accent {
+    position: relative;
+  }
+
+  .gold-accent::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--gold-accent);
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Ondulé background */
+  .wave-pattern {
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120'%3E%3Cpath d='M0,50 Q300,0 600,50 T1200,50 L1200,120 L0,120 Z' fill='rgba(212,175,133,0.1)' /%3E%3C/svg%3E");
+    background-size: 400px 120px;
+    background-repeat: repeat-x;
+    background-position: 0 bottom;
+  }
+
+  /* Texte gradient */
+  .text-gradient-sea {
+    background: linear-gradient(135deg, var(--sea-deep) 0%, var(--nature-green) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Section divider */
+  .section-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--sand-dark) 0%, var(--gold-accent) 50%, var(--nature-green) 100%);
+    margin: 0 auto;
+    border-radius: 2px;
+  }
+
+  /* Ombres */
+  .shadow-soft {
+    box-shadow: 0 4px 15px rgba(26, 95, 122, 0.1);
+  }
+
+  .shadow-medium {
+    box-shadow: 0 10px 30px rgba(26, 95, 122, 0.15);
+  }
+
+  /* Badge */
+  .badge-nature {
+    display: inline-block;
+    background-color: var(--nature-light);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 2s ease-in-out infinite;
+}
